@@ -1,0 +1,16 @@
+[package]
+name = "gbcemu"
+version = "0.1.0"
+authors = ["Assil Ksiksi <cyph0nik@gmail.com>"]
+edition = "2018"
+
+[features]
+debug = ["gbc/debug"]
+
+[dependencies]
+gbc = { path = "../lib" }
+structopt = { version = "0.3", default-features = false }
+log = "0.4"
+env_logger = "0.8"
+spin_sleep = "1.0.0"
+crossterm = "0.25.0"
